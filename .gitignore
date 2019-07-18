@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+# Random other stuff
+*.pptx
+*.ppt
+*.pdf
