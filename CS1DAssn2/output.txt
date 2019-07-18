@@ -1,0 +1,95 @@
+**************************************************
+*  PROGRAMMED BY : Ryan Martinez
+*  CLASS         : CS1D
+*  SECTION       : MW: 3:30 PM
+*  Lab #2        : Stack, Queue, Deque
+**************************************************
+
+**************************************************
+This program is meant to use a list of strings and a list of doubles
+to allow the programmer to implement their own iterations of stacks,
+queues, and deques. The stack is to be implemented both via singly
+and doubly linked. The end of the program tests a parenthesis algorithm
+to validate equations.
+
+Implementation for an STL Stack:
+The name: Jennifer has been added to the stack
+The name: JoAnn has been added to the stack
+The name: Alan has been added to the stack
+The name: Mark has been added to the stack
+The name: Paul has been added to the stack
+The name: Eric has been added to the stack
+The number: 44.44 has been added to the stack
+The number: 88.66 has been added to the stack
+The number: 86.9 has been added to the stack
+The number: 123.4 has been added to the stack
+The number: 8.455 has been added to the stack
+The number: 98.382 has been added to the stack
+The number: 12 has been added to the stack
+The number: 3549.9 has been added to the stack
+Mark has been removed from the stack
+The number 86.9 has been removed from the stack
+
+Implementation for a singly linked list Stack:
+The name: Jennifer has been added to the stack
+The name: JoAnn has been added to the stack
+The name: Alan has been added to the stack
+The name: Mark has been added to the stack
+The name: Paul has been added to the stack
+The name: Eric has been added to the stack
+The number: 44.44 has been added to the stack
+The number: 88.66 has been added to the stack
+The number: 86.9 has been added to the stack
+The number: 123.4 has been added to the stack
+The number: 8.455 has been added to the stack
+The number: 98.382 has been added to the stack
+The number: 12 has been added to the stack
+The number: 3549.9 has been added to the stack
+Implementation for a circular array Stack:
+Mark has been removed from the stack
+Mark has been removed from the stack
+
+Implementation for a Queue:
+The name: Jennifer has been added to the queue
+The name: JoAnn has been added to the queue
+The name: Alan has been added to the queue
+The name: Mark has been added to the queue
+The name: Paul has been added to the queue
+The name: Eric has been added to the queue
+The number: 44.44 has been added to the queue
+The number: 88.66 has been added to the queue
+The number: 86.9 has been added to the queue
+The number: 123.4 has been added to the queue
+The number: 8.455 has been added to the queue
+The number: 98.382 has been added to the queue
+The number: 12 has been added to the queue
+The number: 3549.9 has been added to the queue
+Mark has been removed from the queue
+The number 86.9 has been removed from the queue
+
+Implementation for a Deque:
+The name: Jennifer has been added to the deque
+The name: JoAnn has been added to the deque
+The name: Alan has been added to the deque
+The name: Mark has been added to the deque
+The name: Paul has been added to the deque
+The name: Eric has been added to the deque
+The number: 44.44 has been added to the deque
+The number: 88.66 has been added to the deque
+The number: 86.9 has been added to the deque
+The number: 123.4 has been added to the deque
+The number: 8.455 has been added to the deque
+The number: 98.382 has been added to the deque
+The number: 12 has been added to the deque
+The number: 3549.9 has been added to the deque
+Mark has been removed from the deque
+The number 86.9 has been removed from the queue
+
+Implementation of the Parentheses Algorith:
+(7x - 4) (2x + 6) is a vaild equation
+(7x - 4) (2x + 6} is not a vaild equation
+{7x + 5) (6x+4)} is not a vaild equation
+[(4x - 5) - 4x[6x - 2]] is a vaild equation
+{(8x+5) - 5x[9x+3]}) is not a vaild equation
+(((8x+5) - x[9x+3]))) is not a vaild equation
+{(8x+5) - 6x[9x+3]] is not a vaild equation

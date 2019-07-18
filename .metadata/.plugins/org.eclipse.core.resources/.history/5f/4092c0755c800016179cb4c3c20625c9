@@ -1,0 +1,118 @@
+/*************************************************************************
+ * AUTHOR		: Ryan Martinez
+ * STUDENT ID	: 389657
+ * Assignment	: 2
+ * CLASS		: CS1D
+ * SECTION		: MW: 3:30 PM
+ * DUE DATE		: 9/19/2016
+ ************************************************************************/
+#include "header.h"
+#include "Queue.h"
+#include "CircularExtendableArray.h"
+#include "newVector.h"
+
+void Test_One(newQueue<string> tester);
+
+
+/*************************************************************************
+ * Assignment 2
+ * _______________________________________________________________________
+ * This program is meant to use a list of strings and a list of doubles
+ * to allow the programmer to implement their own iterations of stacks,
+ * queues, and deques. The stack is to be implemented both via singly
+ * and doubly linked. The end of the program tests a parenthesis algorithm
+ * to validate equations.
+ * _______________________________________________________________________
+ *
+ ************************************************************************/
+
+int main()
+{
+
+	//---------------------------------------------------------------------
+
+	newQueue <string> same;
+	CircExtAr<string> apples(10);
+	newVector<string> nuts(5);
+
+
+	//---------------------------------------------------------------------
+
+	//str_infile.open("strinput.txt");
+	//doub_infile.open("numinput.txt");
+
+
+	// This function will output the class header to the console
+	ClassHeader();
+
+	//Test_One(same);
+
+//	apples.insert(0, "poop");
+//	cout << endl << apples.size();
+//	apples.insert(1, "yas");
+//	cout << endl << apples.size() << endl;
+//	apples.insert(2, "uhm");
+//	for(int i = 0; i < apples.size(); i++)
+//	{
+//		cout << apples[i] << endl;
+//	}
+//	apples.erase(1);
+//	for(int i = 0; i < apples.size(); i++)
+//	{
+//		cout << apples[i] << endl;
+//	}
+//	apples.reserve(15);
+//	for(int i = 0; i < apples.size(); i++)
+//	{
+//		cout << apples[i] << endl;
+//	}
+
+	nuts.addFront("five");
+	//nuts.addFront("four");
+	//nuts.addFront("three");
+	//nuts.addFront("two");
+	for(int i = 0; i < nuts.size(); i++)
+	{
+		cout << nuts[i] << endl;
+	}
+
+
+	return 0;
+}
+
+void Test_One(newQueue<string> tester)
+{
+	if(tester.empty())
+	{
+		cout << "The queue is empty\n";
+	}
+	else
+	{
+		cout << "The queue is not empty\n";
+	}
+
+	tester.enqueue("A man, a plan, a canal, Panama");
+
+	if(tester.empty())
+	{
+		cout << "The queue is empty\n";
+	}
+	else
+	{
+		cout << "The queue is not empty\n";
+	}
+
+	cout << tester.front() << endl;
+
+	tester.enqueue("Was it a car or a cat I saw?");
+	cout << tester.size() << endl;
+	tester.enqueue("Sit on a potato pan, Otis");
+	tester.enqueue("No lemon, no melon");
+	tester.dequeue();
+	cout << tester.front() << endl;
+	tester.dequeue();
+	tester.dequeue();
+	cout << tester.front() << endl << tester.size() << endl;
+}
+
+

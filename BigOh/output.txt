@@ -1,0 +1,152 @@
+The objective of this lab is to accumulate data from functions that
+can have their runtimes quantified and compared to the Big Oh analysis 
+that was taught in lecture. Through gathering this runtime data and
+comparing it to the number of elements used in the arrays, we are
+able to create a graph that shows common trends equivalent to what
+is estimated through the Big Oh analysis.
+
+Enter the number of elements: 10000
+
+prefixAverages1: 
+
+Random Numbers Input: 
+10	7	11	24	43	
+
+Run Time per Search in Nano Seconds:
+1270653		12667188	12699402	12701113	12645522	12659206	12707385	12796331	
+
+Array Output
+0	5	5	7	10	
+
+prefixAverage2: 
+
+Random Numbers Input: 
+10	7	11	24	43	
+
+Run Time per Search in Nano Seconds:
+53597	34781	57588	35066	43334	57303	53882	68421	
+
+Array Output
+10	8	9	13	19	
+
+Enter the number of elements: 20000
+
+prefixAverages1: 
+
+Random Numbers Input: 
+7	61	91	19	55	
+
+Run Time per Search in Nano Seconds:
+5.41E+7		5.37E+07	5.40e+07	5.54E+07	5.40E+07	5.44E+07	5.35E+07	5.45E+07	
+
+Array Output
+0	3	22	39	35	
+
+prefixAverage2: 
+
+Random Numbers Input: 
+7	61	91	19	55	
+
+Run Time per Search in Nano Seconds:
+81820	90088	86953	122588	105483	104058	106908	103487
+
+Array Output
+7	34	53	44	46	
+
+Enter the number of elements: 50000
+
+prefixAverages1: 
+
+Random Numbers Input: 
+60	18	41	24	73	
+
+Run Time per Search in Nano Seconds:
+3.32E+08	3.32E+08	3.33E+08	3.33E+08	3.36E+08	3.36E+08	3.38E+08	3.34E+08	
+
+Array Output
+0	30	26	29	28	
+
+prefixAverage2: 
+
+Random Numbers Input: 
+60	18	41	24	73	
+
+Run Time per Search in Nano Seconds:
+293641	205834	202128	211536	204124	204694	200703	202984	
+
+Array Output
+60	39	39	35	43	
+
+Enter the number of elements: 70000
+
+prefixAverages1: 
+
+Random Numbers Input: 
+89	79	93	37	1	
+
+Run Time per Search in Nano Seconds:
+6.56E+08	6.56E+08	6.56E+08	6.55E+08	6.54E+08	6.55E+08	6.55E+08	6.54E+08	
+
+Array Output
+0	44	56	65	59	
+
+prefixAverage2: 
+
+Random Numbers Input: 
+89	79	93	37	1	
+
+Run Time per Search in Nano Seconds:
+232917	236624	250593	245177	248312	247457	244606	252589	
+
+Array Output
+89	84	87	74	59	
+
+Enter the number of elements: 100000
+
+prefixAverages1: 
+
+Random Numbers Input: 
+49	93	7	99	92	
+
+Run Time per Search in Nano Seconds:
+1.27E+09	1.27E+09	1.29E+09	1.28E+09	1.27E+09	1.27E+09	1.28E+09	1.28E+09	
+
+Array Output
+0	24	47	37	49	
+
+prefixAverage2: 
+
+Random Numbers Input: 
+49	93	7	99	92	
+
+Run Time per Search in Nano Seconds:
+336976	337545	347523	346098	345528	337830	348379	348664	
+
+Array Output
+49	71	49	62	68	
+
+Enter the number of elements: 120000
+
+prefixAverages1: 
+
+Random Numbers Input: 
+44	77	32	86	66	
+
+Run Time per Search in Nano Seconds:
+1.84E+09	1.83E+09	1.83E+09	1.83E+09	1.82E+09	1.83E+09	1.83E+09	1.83E+09	
+
+Array Output
+0	22	40	38	47	
+
+prefixAverage2: 
+
+Random Numbers Input: 
+44	77	32	86	66	
+
+Run Time per Search in Nano Seconds:
+417940	419652	397699	487502	384015	362633	356932	352940	
+
+Array Output
+44	60	51	59	61	
+
+Enter the number of elements: -1

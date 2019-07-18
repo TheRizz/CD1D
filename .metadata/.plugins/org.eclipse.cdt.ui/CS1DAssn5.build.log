@@ -1,0 +1,7 @@
+15:19:47 **** Incremental Build of configuration Debug for project CS1DAssn5 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o ClassHeader.o "..\\ClassHeader.cpp" 
+g++ -o CS1DAssn5.exe ClassHeader.o main.o tests.o 
+
+15:19:51 Build Finished (took 3s.558ms)
+

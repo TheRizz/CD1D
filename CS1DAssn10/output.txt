@@ -1,0 +1,53 @@
+Depth First Search:
+Los Angeles
+
+San Francisco
+
+Seattle
+
+Denver
+
+Kansas City
+
+Dallas
+
+Houston
+
+Atlanta
+
+Miami
+
+New York
+
+Boston
+
+Chicago
+
+This is the total trip distance: 7409
+
+The discovery edges are distances:
+381
+807
+1331
+599
+496
+239
+810
+661
+888
+214
+983
+
+The back edges are distances:
+1267
+1015
+2097
+1003
+1663
+1435
+533
+787
+1260
+864
+781
+1187

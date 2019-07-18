@@ -1,0 +1,12 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\team.o
+./debug\graphnode.o
+./debug\database.o
+./debug\souvenir.o
+./debug\graph.o
+./debug\route.o
+./debug\map.o
+./debug\moc_mainwindow.o
+);

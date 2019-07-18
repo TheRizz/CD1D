@@ -1,0 +1,185 @@
+/*************************************************************************
+ * AUTHOR		: Ryan Martinez
+ * STUDENT ID	: 389657
+ * Assignment	: 3
+ * CLASS		: CS1D
+ * SECTION		: MW: 3:30 PM
+ * DUE DATE		: 9/21/2016
+ ************************************************************************/
+
+#ifndef CIRCULAREXTENDABLEARRAY_H_
+#define CIRCULAREXTENDABLEARRAY_H_
+
+#include "header.h"
+
+template<typename T>
+class CircExtAr
+{
+private:
+	T *data;
+	int head;
+	int tail;
+	int capacity;
+	int count;
+public:
+	CircExtAr();
+	CircExtAr(int n);
+	~CircExtAr();
+	int size() const;
+	bool empty() const;
+	T operator[](int i);
+	T at(int i);
+	void erase(int i);
+	void insert(int i, const T& e);
+	void reserve(int n);
+
+	//CircExtAr &CircExtAr<T>::operator=(const CircExtAr & a);
+
+};
+
+template <typename T>
+CircExtAr<T>::CircExtAr()
+{
+	head = 0;
+	tail = 0;
+	capacity = 0;
+	count = 0;
+	data = NULL;
+}
+
+template <typename T>
+CircExtAr<T>::CircExtAr(int i)
+{
+	head = 0;
+	tail = 0;
+	capacity = 0;
+	count = 0;
+	data = new T[i];
+}
+
+template <typename T>
+CircExtAr<T>::~CircExtAr()
+{
+	delete [] data;
+}
+
+template <typename T>
+int CircExtAr<T>::size() const
+{
+	return count;
+}
+
+template <typename T>
+bool CircExtAr<T>::empty() const
+{
+	return size() == 0;
+}
+
+template <typename T>
+T CircExtAr<T>::operator[](int i)
+{
+	return data[head + i];
+}
+
+template <typename T>
+T CircExtAr<T>::at(int i)
+{
+	return data[head + i];
+}
+
+template <typename T>
+void CircExtAr<T>::erase(int i)
+{
+	for(int j = (head + i); j != tail; j++)
+	{
+		if(j == (capacity-1))
+		{
+			data[capacity-1] = data[0];
+			j = -1;
+		}
+		else //if(j != tail)
+		{
+			data[j] = data[j+1];
+		}
+	}
+	//delete data[tail];
+	if(tail == 0)
+	{
+		tail = capacity - 1;
+	}
+	else
+	{
+		tail --;
+	}
+	count--;
+}
+
+template<typename T>
+void CircExtAr<T>::reserve(int n)
+{
+	T *B;
+	if(capacity >= n) return;
+	B = new T[n];
+	for(int i = head; i != tail; i++ )
+	{
+		B[i] = data[i];
+	}
+	if(head != 0 || tail != 0)
+	{
+		B[tail] = data[tail];
+	}
+	if(data != NULL) delete [] data;
+	data = B;
+	capacity = n;
+}
+
+template <typename T>
+void CircExtAr<T>::insert(int i, const T& e)
+{
+	for(int j = (tail+1); j != head + i; j--)
+	{
+		if(j == -1)
+		{
+			data[0] = data[capacity - 1];
+			j = capacity;
+		}
+		else
+		{
+			data[j] = data[j-1];
+		}
+	}
+	data[i] = e;
+	//int tempTail = tail;
+	if(tail == capacity - 1)
+	{
+		tail = 0;
+	}
+	else
+	{
+		tail ++;
+	}
+	//data[tail] = data[tempTail];
+	count++;
+}
+
+//template <typename T>
+//CircExtAr<T> & CircExtAr<T>::operator=(const CircExtAr & c)
+//{
+//	if (this == &c)
+//	{
+//		return *this;
+//	}
+//	delete [] data;
+//	head = c.head;
+//	tail = c.tail;
+//	count = c.count;
+//	data = new T[capacity];
+//	for(int i = 0; i < count; i++)
+//	{
+//		data[i] = c.data[i];
+//	}
+//}
+
+
+
+#endif /* CIRCULAREXTENDABLEARRAY_H_ */

@@ -1,0 +1,7 @@
+15:54:04 **** Rebuild of configuration Debug for project CS1DAssn7 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o CS1DAssn7.exe main.o 
+
+15:54:07 Build Finished (took 3s.350ms)
+

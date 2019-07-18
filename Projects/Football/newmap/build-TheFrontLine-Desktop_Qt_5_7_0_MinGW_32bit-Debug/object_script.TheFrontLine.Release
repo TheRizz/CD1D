@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\team.o
+./release\graphnode.o
+./release\database.o
+./release\souvenir.o
+./release\graph.o
+./release\route.o
+./release\map.o
+./release\moc_mainwindow.o
+);

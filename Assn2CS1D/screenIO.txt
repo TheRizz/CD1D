@@ -1,0 +1,27 @@
+**************************************************
+*  PROGRAMMED BY : Ryan Martinez, Tyler
+*  CLASS         : CS1D
+*  SECTION       : MW: 3:30 PM
+*  Lab #2        : Recursion
+**************************************************
+
+This program uses a recursive function to read in from an input file,
+store a line from an input file as raw data, process the data by getting
+rid of all of the spaces and punctuation, and then stores the remaining
+characters reversed in a new string. With the two new strings stored,
+a comparison is made to check if the word is a palindrome. At the end of
+the function a boolean expression is checked and output according to
+whether the string is a a palindrome or not. Then the function checks
+if the input file still has a data left to read, if so then the function
+is called recursively, if not then the function ends.
+
+radar - The word IS a palindrome
+CS1D - The word IS NOT a palindrome
+Racecar   - The word IS a palindrome
+Saddleback - The word IS NOT a palindrome
+dad - The word IS a palindrome
+mom - The word IS a palindrome
+A man a plan a canal Panama - The word IS a palindrome
+The rain in Spain - The word IS NOT a palindrome
+No lemon, no melon - The word IS a palindrome
+Was it a cat I saw? - The word IS a palindrome

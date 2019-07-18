@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CS1DAssn5/HeapPriorityQueue.h&apos; to &apos;PriorityQueue.h&apos;" description="Rename resource &apos;HeapPriorityQueue.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="HeapPriorityQueue.h" name="PriorityQueue.h" stamp="1475522220157" updateReferences="true"/>
+</session>

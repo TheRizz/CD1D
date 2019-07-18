@@ -1,0 +1,250 @@
+\hypertarget{class_item}{}\section{Item Class Reference}
+\label{class_item}\index{Item@{Item}}
+
+
+{\ttfamily \#include $<$Item.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_item_1_1_purchase}{Purchase}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_item_a297720c02984eab37332ae795d22189d}{Item} ()
+\begin{DoxyCompactList}\small\item\em This is the default \hyperlink{class_item}{Item} constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_item_afc899efe46f7dc6d85e461cb2ca9ebaf}{Item} (const \hyperlink{class_item}{Item} \&)
+\begin{DoxyCompactList}\small\item\em This is the \hyperlink{class_item}{Item} copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_item_a344bcf40797aec4d8504b5eeb116d03d}{Item} (int id, const Q\+String \&name, int quantity)
+\begin{DoxyCompactList}\small\item\em This is a nondefault constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_item_ad0cc8be6fae78de7c88f937265fcf9de}{Item} (int id, const Q\+String \&name, int quantity, bool is\+On\+Shelf)
+\begin{DoxyCompactList}\small\item\em This is a nondefault constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_item_a11663c84075b78c3ae5e30fdfcd7c458}{$\sim$\+Item} ()
+\begin{DoxyCompactList}\small\item\em This is the default deconstructor. \end{DoxyCompactList}\item 
+int \hyperlink{class_item_a44199628f22d918876d21c415a545b0d}{Id} () const 
+\begin{DoxyCompactList}\small\item\em Id return. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_item_a591cfd33ce61df595047b45a4fdec052}{Name} () const 
+\begin{DoxyCompactList}\small\item\em Name return. \end{DoxyCompactList}\item 
+int \hyperlink{class_item_a2fe9750d2081ea58d178e1d4d7200eda}{Quantity} () const 
+\begin{DoxyCompactList}\small\item\em Quantity return. \end{DoxyCompactList}\item 
+bool \hyperlink{class_item_a782f7033019bf2dffe30d27dc830d446}{On\+Shelf} () const 
+\begin{DoxyCompactList}\small\item\em On\+Shelf return. \end{DoxyCompactList}\item 
+void \hyperlink{class_item_a0894d05d3d755dfae05494f1a8c6ed75}{Change\+Name} (const Q\+String \&)
+\begin{DoxyCompactList}\small\item\em Changes the name variable. \end{DoxyCompactList}\item 
+\hyperlink{class_item_1_1_purchase}{Purchase} \hyperlink{class_item_ab7b5bcc75c974fdf2f9b6f07098e8754}{Sell} (\hyperlink{class_member}{Member} \&customer, int quantity, const \hyperlink{class_date}{Date} \&date\+Of\+Sale)
+\begin{DoxyCompactList}\small\item\em Returns a a purchase. \end{DoxyCompactList}\item 
+\hyperlink{class_item_1_1_purchase}{Purchase} \hyperlink{class_item_a7465f0baad50838b38c23911f52ee9a6}{Sell} (\hyperlink{class_member}{Member} \&customer, int quantity, int year, int month, int day)
+\begin{DoxyCompactList}\small\item\em Returns a a purchase. \end{DoxyCompactList}\item 
+void \hyperlink{class_item_afc6aeeca0e43ca1c3513b0370fd40670}{Restock} (int)
+\begin{DoxyCompactList}\small\item\em Restocks the item. \end{DoxyCompactList}\item 
+void \hyperlink{class_item_ae2744222e97a9b4623be795abfcd7094}{On\+Shelf} (bool)
+\begin{DoxyCompactList}\small\item\em Updates the On\+Shelf variable. \end{DoxyCompactList}\item 
+void \hyperlink{class_item_a91f7b7b763838c9d806eef30d0e70bfc}{Deshelve} ()
+\begin{DoxyCompactList}\small\item\em Sets the On\+Shelf variable. \end{DoxyCompactList}\item 
+void \hyperlink{class_item_abb31702d0e49dbaa5f7f7e53ca081698}{Reshelve} ()
+\begin{DoxyCompactList}\small\item\em Sets the On\+Shelf variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\+L\+A\+SS\+: \hyperlink{class_item}{Item} 
+
+ The \hyperlink{class_item}{Item} class is able to keep track of one instance of an item, including the item\textquotesingle{}s id, name, quantity, and if it is on the shelf or not. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Item@{Item}!Item@{Item}}
+\index{Item@{Item}!Item@{Item}}
+\subsubsection[{\texorpdfstring{Item()}{Item()}}]{\setlength{\rightskip}{0pt plus 5cm}Item\+::\+Item (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_item_a297720c02984eab37332ae795d22189d}{}\label{class_item_a297720c02984eab37332ae795d22189d}
+
+
+This is the default \hyperlink{class_item}{Item} constructor. 
+
+This constructor initializes the private variables for the object \index{Item@{Item}!Item@{Item}}
+\index{Item@{Item}!Item@{Item}}
+\subsubsection[{\texorpdfstring{Item(const Item \&)}{Item(const Item &)}}]{\setlength{\rightskip}{0pt plus 5cm}Item\+::\+Item (
+\begin{DoxyParamCaption}
+\item[{const {\bf Item} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_item_afc899efe46f7dc6d85e461cb2ca9ebaf}{}\label{class_item_afc899efe46f7dc6d85e461cb2ca9ebaf}
+
+
+This is the \hyperlink{class_item}{Item} copy constructor. 
+
+This constructor copies the information from another object to this object \index{Item@{Item}!Item@{Item}}
+\index{Item@{Item}!Item@{Item}}
+\subsubsection[{\texorpdfstring{Item(int id, const Q\+String \&name, int quantity)}{Item(int id, const QString &name, int quantity)}}]{\setlength{\rightskip}{0pt plus 5cm}Item\+::\+Item (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{const Q\+String \&}]{name, }
+\item[{int}]{quantity}
+\end{DoxyParamCaption}
+)}\hypertarget{class_item_a344bcf40797aec4d8504b5eeb116d03d}{}\label{class_item_a344bcf40797aec4d8504b5eeb116d03d}
+
+
+This is a nondefault constructor. 
+
+This constructor initializes the private data members from the arguemts as well as it initializes the is\+On\+Shelf variable to true \index{Item@{Item}!Item@{Item}}
+\index{Item@{Item}!Item@{Item}}
+\subsubsection[{\texorpdfstring{Item(int id, const Q\+String \&name, int quantity, bool is\+On\+Shelf)}{Item(int id, const QString &name, int quantity, bool isOnShelf)}}]{\setlength{\rightskip}{0pt plus 5cm}Item\+::\+Item (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{const Q\+String \&}]{name, }
+\item[{int}]{quantity, }
+\item[{bool}]{is\+On\+Shelf}
+\end{DoxyParamCaption}
+)}\hypertarget{class_item_ad0cc8be6fae78de7c88f937265fcf9de}{}\label{class_item_ad0cc8be6fae78de7c88f937265fcf9de}
+
+
+This is a nondefault constructor. 
+
+This constructor initializes the private data members from the arguemts \index{Item@{Item}!````~Item@{$\sim$\+Item}}
+\index{````~Item@{$\sim$\+Item}!Item@{Item}}
+\subsubsection[{\texorpdfstring{$\sim$\+Item()}{~Item()}}]{\setlength{\rightskip}{0pt plus 5cm}Item\+::$\sim$\+Item (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_item_a11663c84075b78c3ae5e30fdfcd7c458}{}\label{class_item_a11663c84075b78c3ae5e30fdfcd7c458}
+
+
+This is the default deconstructor. 
+
+This deconstructor doesn\textquotesingle{}t effect the object at all because there is no dynamic data being used in the object 
+
+\subsection{Member Function Documentation}
+\index{Item@{Item}!Change\+Name@{Change\+Name}}
+\index{Change\+Name@{Change\+Name}!Item@{Item}}
+\subsubsection[{\texorpdfstring{Change\+Name(const Q\+String \&)}{ChangeName(const QString &)}}]{\setlength{\rightskip}{0pt plus 5cm}void Item\+::\+Change\+Name (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_item_a0894d05d3d755dfae05494f1a8c6ed75}{}\label{class_item_a0894d05d3d755dfae05494f1a8c6ed75}
+
+
+Changes the name variable. 
+
+This function uses the argument to update the name variable \index{Item@{Item}!Deshelve@{Deshelve}}
+\index{Deshelve@{Deshelve}!Item@{Item}}
+\subsubsection[{\texorpdfstring{Deshelve()}{Deshelve()}}]{\setlength{\rightskip}{0pt plus 5cm}void Item\+::\+Deshelve (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_item_a91f7b7b763838c9d806eef30d0e70bfc}{}\label{class_item_a91f7b7b763838c9d806eef30d0e70bfc}
+
+
+Sets the On\+Shelf variable. 
+
+Sets the On\+Shelf variable to false \index{Item@{Item}!Id@{Id}}
+\index{Id@{Id}!Item@{Item}}
+\subsubsection[{\texorpdfstring{Id() const }{Id() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Item\+::\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_item_a44199628f22d918876d21c415a545b0d}{}\label{class_item_a44199628f22d918876d21c415a545b0d}
+
+
+Id return. 
+
+Returns the Id \index{Item@{Item}!Name@{Name}}
+\index{Name@{Name}!Item@{Item}}
+\subsubsection[{\texorpdfstring{Name() const }{Name() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Item\+::\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_item_a591cfd33ce61df595047b45a4fdec052}{}\label{class_item_a591cfd33ce61df595047b45a4fdec052}
+
+
+Name return. 
+
+Returns the Name \index{Item@{Item}!On\+Shelf@{On\+Shelf}}
+\index{On\+Shelf@{On\+Shelf}!Item@{Item}}
+\subsubsection[{\texorpdfstring{On\+Shelf() const }{OnShelf() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Item\+::\+On\+Shelf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_item_a782f7033019bf2dffe30d27dc830d446}{}\label{class_item_a782f7033019bf2dffe30d27dc830d446}
+
+
+On\+Shelf return. 
+
+Returns the On\+Shelf \index{Item@{Item}!On\+Shelf@{On\+Shelf}}
+\index{On\+Shelf@{On\+Shelf}!Item@{Item}}
+\subsubsection[{\texorpdfstring{On\+Shelf(bool)}{OnShelf(bool)}}]{\setlength{\rightskip}{0pt plus 5cm}void Item\+::\+On\+Shelf (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+On\+Shelf}
+\end{DoxyParamCaption}
+)}\hypertarget{class_item_ae2744222e97a9b4623be795abfcd7094}{}\label{class_item_ae2744222e97a9b4623be795abfcd7094}
+
+
+Updates the On\+Shelf variable. 
+
+This function sets the On\+Shelf variable to the argument \index{Item@{Item}!Quantity@{Quantity}}
+\index{Quantity@{Quantity}!Item@{Item}}
+\subsubsection[{\texorpdfstring{Quantity() const }{Quantity() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Item\+::\+Quantity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_item_a2fe9750d2081ea58d178e1d4d7200eda}{}\label{class_item_a2fe9750d2081ea58d178e1d4d7200eda}
+
+
+Quantity return. 
+
+Returns the Quantity \index{Item@{Item}!Reshelve@{Reshelve}}
+\index{Reshelve@{Reshelve}!Item@{Item}}
+\subsubsection[{\texorpdfstring{Reshelve()}{Reshelve()}}]{\setlength{\rightskip}{0pt plus 5cm}void Item\+::\+Reshelve (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_item_abb31702d0e49dbaa5f7f7e53ca081698}{}\label{class_item_abb31702d0e49dbaa5f7f7e53ca081698}
+
+
+Sets the On\+Shelf variable. 
+
+Sets the On\+Shelf variable to true \index{Item@{Item}!Restock@{Restock}}
+\index{Restock@{Restock}!Item@{Item}}
+\subsubsection[{\texorpdfstring{Restock(int)}{Restock(int)}}]{\setlength{\rightskip}{0pt plus 5cm}void Item\+::\+Restock (
+\begin{DoxyParamCaption}
+\item[{int}]{addend}
+\end{DoxyParamCaption}
+)}\hypertarget{class_item_afc6aeeca0e43ca1c3513b0370fd40670}{}\label{class_item_afc6aeeca0e43ca1c3513b0370fd40670}
+
+
+Restocks the item. 
+
+This function restocks the item and adds the argument to the quantity in stock \index{Item@{Item}!Sell@{Sell}}
+\index{Sell@{Sell}!Item@{Item}}
+\subsubsection[{\texorpdfstring{Sell(\+Member \&customer, int quantity, const Date \&date\+Of\+Sale)}{Sell(Member &customer, int quantity, const Date &dateOfSale)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Item\+::\+Purchase} Item\+::\+Sell (
+\begin{DoxyParamCaption}
+\item[{{\bf Member} \&}]{customer, }
+\item[{int}]{quantity, }
+\item[{const {\bf Date} \&}]{date\+Of\+Sale}
+\end{DoxyParamCaption}
+)}\hypertarget{class_item_ab7b5bcc75c974fdf2f9b6f07098e8754}{}\label{class_item_ab7b5bcc75c974fdf2f9b6f07098e8754}
+
+
+Returns a a purchase. 
+
+This function uses the arguments to create a purchase that is returned from the function \index{Item@{Item}!Sell@{Sell}}
+\index{Sell@{Sell}!Item@{Item}}
+\subsubsection[{\texorpdfstring{Sell(\+Member \&customer, int quantity, int year, int month, int day)}{Sell(Member &customer, int quantity, int year, int month, int day)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Item\+::\+Purchase} Item\+::\+Sell (
+\begin{DoxyParamCaption}
+\item[{{\bf Member} \&}]{customer, }
+\item[{int}]{quantity, }
+\item[{int}]{year, }
+\item[{int}]{month, }
+\item[{int}]{day}
+\end{DoxyParamCaption}
+)}\hypertarget{class_item_a7465f0baad50838b38c23911f52ee9a6}{}\label{class_item_a7465f0baad50838b38c23911f52ee9a6}
+
+
+Returns a a purchase. 
+
+This function uses the arguments to create a purchase that is returned from the function 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Item.\+h\item 
+Item.\+cpp\end{DoxyCompactItemize}

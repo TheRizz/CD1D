@@ -1,0 +1,103 @@
+/*************************************************************************
+ * AUTHOR		: Ryan Martinez
+ * STUDENT ID	: 389657
+ * Assignment	: 3
+ * CLASS		: CS1D
+ * SECTION		: MW: 3:30 PM
+ * DUE DATE		: 9/21/2016
+ ************************************************************************/
+
+#ifndef NEWVECTOR_H_
+#define NEWVECTOR_H_
+
+#include "header.h"
+#include "CircularExtendableArray.h"
+
+template<typename T>
+class newVector
+{
+private:
+	CircExtAr<T> D;
+public:
+	newVector(){};
+	newVector(int num);
+	int size() const;
+	bool empty() const;
+	void addFront(const T& e);
+	void addRear(const T& e);
+	void add(int num, const T& e);
+	void eraseFront();
+	void eraseRear();
+	void erase(int num);
+	T operator[](int num);
+	T at(int num);
+};
+
+template<typename T>
+newVector<T>::newVector(int num)
+{
+	D.reserve(num);
+}
+
+template<typename T>
+int newVector<T>::size() const
+{
+	return D.size();
+}
+
+template<typename T>
+bool newVector<T>::empty() const
+{
+	return D.empty();
+}
+
+template<typename T>
+void newVector<T>::addFront(const T& e)
+{
+	D.insert(0, e);
+}
+
+template<typename T>
+void newVector<T>::addRear(const T& e)
+{
+	D.insert(D.size(), e);
+}
+
+template<typename T>
+void newVector<T>::add(int num, const T& e)
+{
+	D.insert(num, e);
+}
+
+template<typename T>
+void newVector<T>::eraseFront()
+{
+	D.erase(0);
+}
+
+template<typename T>
+void newVector<T>::eraseRear()
+{
+	D.erase(D.size()-1);
+}
+
+template<typename T>
+void newVector<T>::erase(int num)
+{
+	D.erase(num);
+}
+
+template<typename T>
+T newVector<T>::operator[](int num)
+{
+	return D[num];
+}
+
+template<typename T>
+T newVector<T>::at(int num)
+{
+	return D.at(num);
+}
+
+
+#endif /* NEWVECTOR_H_ */

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CS1DAssn3/Queue.h&apos; to &apos;LinkedDeque.h&apos;" description="Rename resource &apos;Queue.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Queue.h" name="LinkedDeque.h" stamp="1474414788662" updateReferences="true"/>
+</session>

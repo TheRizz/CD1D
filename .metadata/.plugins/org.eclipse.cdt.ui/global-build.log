@@ -1,0 +1,496 @@
+03:48:10 **** Clean-only build of configuration Debug for project CS1DAssn16 ****
+rm -rf main.d CS1DAssn16.exe bruteforce.d bruteforce.o main.o 
+Info: Nothing to build for Assn1CS1D
+03:48:14 **** Rebuild of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o bruteforce.o "..\\bruteforce.cpp" 
+In file included from ..\bruteforce.cpp:1:0:
+..\header.h:6:16: error: 'string' was not declared in this scope
+ int bruteforce(string key, string text);
+                ^
+..\header.h:6:28: error: 'string' was not declared in this scope
+ int bruteforce(string key, string text);
+                            ^
+..\header.h:6:39: error: expression list treated as compound expression in initializer [-fpermissive]
+ int bruteforce(string key, string text);
+                                       ^
+..\bruteforce.cpp:3:16: error: redefinition of 'int bruteforce'
+ int bruteforce(string key, string text)
+                ^
+In file included from ..\bruteforce.cpp:1:0:
+..\header.h:6:5: error: 'int bruteforce' previously defined here
+ int bruteforce(string key, string text);
+     ^
+..\bruteforce.cpp:3:16: error: 'string' was not declared in this scope
+ int bruteforce(string key, string text)
+                ^
+..\bruteforce.cpp:3:28: error: 'string' was not declared in this scope
+ int bruteforce(string key, string text)
+                            ^
+Info: Nothing to build for Assn1CS1D
+03:49:46 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+In file included from ..\main.cpp:2:0:
+..\header.h:6:16: error: 'string' was not declared in this scope
+ int bruteforce(string key, string text);
+                ^
+..\header.h:6:16: note: suggested alternative:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iosfwd:39:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\main.cpp:1:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stringfwd.h:62:33: note:   'std::string'
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from ..\main.cpp:2:0:
+..\header.h:6:28: error: 'string' was not declared in this scope
+ int bruteforce(string key, string text);
+                            ^
+..\header.h:6:28: note: suggested alternative:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iosfwd:39:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\main.cpp:1:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stringfwd.h:62:33: note:   'std::string'
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from ..\main.cpp:2:0:
+..\header.h:6:39: error: expression list treated as compound expression in initializer [-fpermissive]
+ int bruteforce(string key, string text);
+                                       ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:7:50: error: 'bruteforce' cannot be used as a function
+     cout << bruteforce("aabaaa", "aaabcaadaabaaa");
+                                                  ^
+03:49:54 **** Rebuild of configuration Debug for project CS1DEC ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o CS1DEC.exe main.o 
+Info: Nothing to build for Assn1CS1D
+Info: Nothing to build for CS1DEC
+Info: Nothing to build for Assn1CS1D
+Info: Nothing to build for CS1DEC
+Info: Nothing to build for Assn1CS1D
+03:51:08 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o bruteforce.o "..\\bruteforce.cpp" 
+In file included from ..\bruteforce.cpp:1:0:
+..\header.h:7:16: error: 'string' was not declared in this scope
+ int bruteforce(string key, string text);
+                ^
+..\header.h:7:28: error: 'string' was not declared in this scope
+ int bruteforce(string key, string text);
+                            ^
+..\header.h:7:39: error: expression list treated as compound expression in initializer [-fpermissive]
+ int bruteforce(string key, string text);
+                                       ^
+..\bruteforce.cpp:3:16: error: redefinition of 'int bruteforce'
+ int bruteforce(string key, string text)
+                ^
+In file included from ..\bruteforce.cpp:1:0:
+..\header.h:7:5: error: 'int bruteforce' previously defined here
+ int bruteforce(string key, string text);
+     ^
+..\bruteforce.cpp:3:16: error: 'string' was not declared in this scope
+ int bruteforce(string key, string text)
+                ^
+..\bruteforce.cpp:3:28: error: 'string' was not declared in this scope
+ int bruteforce(string key, string text)
+                            ^
+Info: Nothing to build for Assn1CS1D
+03:51:17 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o bruteforce.o "..\\bruteforce.cpp" 
+..\bruteforce.cpp: In function 'int bruteforce(std::string, std::string)':
+..\bruteforce.cpp:9:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     while(i < text.size() && !verify)
+                         ^
+..\bruteforce.cpp:18:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 if(a < key.size())
+                                 ^
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o CS1DAssn16.exe bruteforce.o main.o 
+Info: Nothing to build for Assn1CS1D
+03:51:50 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o bruteforce.o "..\\bruteforce.cpp" 
+g++ -o CS1DAssn16.exe bruteforce.o main.o 
+Info: Nothing to build for Assn1CS1D
+Info: Nothing to build for CS1DAssn16
+Info: Nothing to build for Assn1CS1D
+03:52:00 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o bruteforce.o "..\\bruteforce.cpp" 
+g++ -o CS1DAssn16.exe bruteforce.o main.o 
+Info: Nothing to build for CS1DAssn16
+03:52:32 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o bruteforce.o "..\\bruteforce.cpp" 
+g++ -o CS1DAssn16.exe bruteforce.o main.o 
+Info: Nothing to build for CS1DAssn16
+03:55:48 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o bruteforce.o "..\\bruteforce.cpp" 
+g++ -o CS1DAssn16.exe bruteforce.o main.o 
+Info: Nothing to build for CS1DAssn16
+03:58:12 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o CS1DAssn16.exe bruteforce.o main.o 
+Info: Nothing to build for CS1DAssn16
+04:01:57 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o boyermoore.o "..\\boyermoore.cpp" 
+..\boyermoore.cpp: In function 'void search(std::string, std::string)':
+..\boyermoore.cpp:58:47: warning: array subscript has type 'char' [-Wchar-subscripts]
+             s += (s+m < n)? m-badchar[txt[s+m]] : 1;
+                                               ^
+..\boyermoore.cpp:69:45: warning: array subscript has type 'char' [-Wchar-subscripts]
+             s += max(1, j - badchar[txt[s+j]]);
+                                             ^
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o bruteforce.o "..\\bruteforce.cpp" 
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o main.o 
+04:02:27 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o boyermoore.o "..\\boyermoore.cpp" 
+..\boyermoore.cpp: In function 'void search(char*, char*)':
+..\boyermoore.cpp:29:23: error: 'strlen' was not declared in this scope
+     int m = strlen(pat);
+                       ^
+..\boyermoore.cpp:58:47: warning: array subscript has type 'char' [-Wchar-subscripts]
+             s += (s+m < n)? m-badchar[txt[s+m]] : 1;
+                                               ^
+..\boyermoore.cpp:69:45: warning: array subscript has type 'char' [-Wchar-subscripts]
+             s += max(1, j - badchar[txt[s+j]]);
+                                             ^
+04:03:04 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o boyermoore.o "..\\boyermoore.cpp" 
+..\boyermoore.cpp: In function 'void search(char*, char*)':
+..\boyermoore.cpp:59:47: warning: array subscript has type 'char' [-Wchar-subscripts]
+             s += (s+m < n)? m-badchar[txt[s+m]] : 1;
+                                               ^
+..\boyermoore.cpp:70:45: warning: array subscript has type 'char' [-Wchar-subscripts]
+             s += max(1, j - badchar[txt[s+j]]);
+                                             ^
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o main.o 
+Info: Nothing to build for CS1DAssn16
+04:04:21 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o boyermoore.o "..\\boyermoore.cpp" 
+..\boyermoore.cpp: In function 'void search(char*, char*)':
+..\boyermoore.cpp:59:47: warning: array subscript has type 'char' [-Wchar-subscripts]
+             s += (s+m < n)? m-badchar[txt[s+m]] : 1;
+                                               ^
+..\boyermoore.cpp:70:45: warning: array subscript has type 'char' [-Wchar-subscripts]
+             s += max(1, j - badchar[txt[s+j]]);
+                                             ^
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o bruteforce.o "..\\bruteforce.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:15:37: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     search("aabaaa","aaabcaadaabaaa");
+                                     ^
+..\main.cpp:15:37: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o main.o 
+Info: Nothing to build for CS1DAssn16
+04:05:45 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:13:7: error: expected initializer before '<<' token
+  cout << "Brute force algorithm performed on the text :\n" << text
+       ^
+..\main.cpp:17:37: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     search("aabaaa","aaabcaadaabaaa");
+                                     ^
+..\main.cpp:17:37: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+04:06:12 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+In file included from ..\main.cpp:2:0:
+..\header.h:9:8: error: 'vector' does not name a type
+ static vector<int> SearchString(string str, string pat);
+        ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:16:37: error: 'search' was not declared in this scope
+     search("aabaaa","aaabcaadaabaaa");
+                                     ^
+04:07:00 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+In file included from ..\main.cpp:2:0:
+..\header.h:10:20: warning: 'std::vector<int> SearchString(std::string, std::string)' used but never defined [enabled by default]
+ static vector<int> SearchString(string str, string pat);
+                    ^
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o bruteforce.o "..\\bruteforce.cpp" 
+In file included from ..\bruteforce.cpp:1:0:
+..\header.h:10:20: warning: 'std::vector<int> SearchString(std::string, std::string)' declared 'static' but never defined [-Wunused-function]
+ static vector<int> SearchString(string str, string pat);
+                    ^
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o boyermoore.o "..\\boyermoore.cpp" 
+..\boyermoore.cpp: In function 'std::vector<int> SearchString(std::string, std::string)':
+..\boyermoore.cpp:43:45: warning: array subscript has type 'char' [-Wchar-subscripts]
+    s += (s + m < n) ? m - badChar[str[s + m]] : 1;
+                                             ^
+..\boyermoore.cpp:47:38: warning: array subscript has type 'char' [-Wchar-subscripts]
+    s += Max(1, j - badChar[str[s + j]]);
+                                      ^
+..\boyermoore.cpp: At global scope:
+..\boyermoore.cpp:23:20: warning: 'std::vector<int> SearchString(std::string, std::string)' defined but not used [-Wunused-function]
+ static vector<int> SearchString(string str, string pat) {
+                    ^
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o main.o 
+main.o: In function `main':
+H:\CS1D\CS1DAssn16\Debug/../main.cpp:16: undefined reference to `SearchString(std::string, std::string)'
+collect2.exe: error: ld returned 1 exit status
+04:08:17 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+In file included from ..\main.cpp:2:0:
+..\header.h:10:20: warning: 'std::vector<int> SearchString(std::string, std::string)' used but never defined [enabled by default]
+ static vector<int> SearchString(string str, string pat);
+                    ^
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o main.o 
+main.o: In function `main':
+H:\CS1D\CS1DAssn16\Debug/../main.cpp:17: undefined reference to `SearchString(std::string, std::string)'
+collect2.exe: error: ld returned 1 exit status
+04:09:09 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o boyermoore.o "..\\boyermoore.cpp" 
+..\boyermoore.cpp: In function 'std::vector<int> SearchString(std::string, std::string)':
+..\boyermoore.cpp:43:45: warning: array subscript has type 'char' [-Wchar-subscripts]
+    s += (s + m < n) ? m - badChar[str[s + m]] : 1;
+                                             ^
+..\boyermoore.cpp:47:38: warning: array subscript has type 'char' [-Wchar-subscripts]
+    s += Max(1, j - badChar[str[s + j]]);
+                                      ^
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o bruteforce.o "..\\bruteforce.cpp" 
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o main.o 
+Info: Nothing to build for CS1DAssn16
+04:10:27 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:18:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int i = 0; i < apples.size(); i++)
+                                    ^
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o main.o 
+Info: Nothing to build for CS1DAssn16
+04:14:38 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o boyermoore.o "..\\boyermoore.cpp" 
+..\boyermoore.cpp: In function 'std::vector<int> SearchString(std::string, std::string)':
+..\boyermoore.cpp:45:45: warning: array subscript has type 'char' [-Wchar-subscripts]
+    s += (s + m < n) ? m - badChar[str[s + m]] : 1;
+                                             ^
+..\boyermoore.cpp:50:38: warning: array subscript has type 'char' [-Wchar-subscripts]
+    s += Max(1, j - badChar[str[s + j]]);
+                                      ^
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o main.o 
+04:15:01 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o boyermoore.o "..\\boyermoore.cpp" 
+..\boyermoore.cpp: In function 'std::vector<int> SearchString(std::string, std::string)':
+..\boyermoore.cpp:45:45: warning: array subscript has type 'char' [-Wchar-subscripts]
+    s += (s + m < n) ? m - badChar[str[s + m]] : 1;
+                                             ^
+..\boyermoore.cpp:50:38: warning: array subscript has type 'char' [-Wchar-subscripts]
+    s += Max(1, j - badChar[str[s + j]]);
+                                      ^
+..\boyermoore.cpp:54:2: error: 'cout' was not declared in this scope
+  cout << count;
+  ^
+04:15:20 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o boyermoore.o "..\\boyermoore.cpp" 
+..\boyermoore.cpp: In function 'std::vector<int> SearchString(std::string, std::string)':
+..\boyermoore.cpp:46:45: warning: array subscript has type 'char' [-Wchar-subscripts]
+    s += (s + m < n) ? m - badChar[str[s + m]] : 1;
+                                             ^
+..\boyermoore.cpp:51:38: warning: array subscript has type 'char' [-Wchar-subscripts]
+    s += Max(1, j - badChar[str[s + j]]);
+                                      ^
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o main.o 
+Info: Nothing to build for CS1DAssn16
+04:17:49 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o boyermoore.o "..\\boyermoore.cpp" 
+..\boyermoore.cpp: In function 'std::vector<int> SearchString(std::string, std::string)':
+..\boyermoore.cpp:46:45: warning: array subscript has type 'char' [-Wchar-subscripts]
+    s += (s + m < n) ? m - badChar[str[s + m]] : 1;
+                                             ^
+..\boyermoore.cpp:51:38: warning: array subscript has type 'char' [-Wchar-subscripts]
+    s += Max(1, j - badChar[str[s + j]]);
+                                      ^
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o main.o 
+04:19:41 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o main.o 
+Info: Nothing to build for CS1DAssn16
+04:22:39 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o kmp.o "..\\kmp.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o boyermoore.o "..\\boyermoore.cpp" 
+..\boyermoore.cpp: In function 'std::vector<int> SearchString(std::string, std::string)':
+..\boyermoore.cpp:42:45: warning: array subscript has type 'char' [-Wchar-subscripts]
+    s += (s + m < n) ? m - badChar[str[s + m]] : 1;
+                                             ^
+..\boyermoore.cpp:47:38: warning: array subscript has type 'char' [-Wchar-subscripts]
+    s += Max(1, j - badChar[str[s + j]]);
+                                      ^
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o bruteforce.o "..\\bruteforce.cpp" 
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o kmp.o main.o 
+04:23:47 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o boyermoore.o "..\\boyermoore.cpp" 
+..\boyermoore.cpp: In function 'std::vector<int> SearchString(std::string, std::string)':
+..\boyermoore.cpp:42:45: warning: array subscript has type 'char' [-Wchar-subscripts]
+    s += (s + m < n) ? m - badChar[str[s + m]] : 1;
+                                             ^
+..\boyermoore.cpp:47:38: warning: array subscript has type 'char' [-Wchar-subscripts]
+    s += Max(1, j - badChar[str[s + j]]);
+                                      ^
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o bruteforce.o "..\\bruteforce.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o kmp.o "..\\kmp.cpp" 
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o kmp.o main.o 
+Info: Nothing to build for CS1DAssn16
+Info: Nothing to build for CS1DAssn16
+04:25:39 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o kmp.o "..\\kmp.cpp" 
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o kmp.o main.o 
+Info: Nothing to build for CS1DAssn16
+04:31:50 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o kmp.o "..\\kmp.cpp" 
+..\kmp.cpp: In function 'std::vector<int> computeFailFunction(std::string)':
+..\kmp.cpp:64:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(i < key.size())
+                     ^
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o bruteforce.o "..\\bruteforce.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o boyermoore.o "..\\boyermoore.cpp" 
+..\boyermoore.cpp: In function 'std::vector<int> SearchString(std::string, std::string)':
+..\boyermoore.cpp:42:45: warning: array subscript has type 'char' [-Wchar-subscripts]
+    s += (s + m < n) ? m - badChar[str[s + m]] : 1;
+                                             ^
+..\boyermoore.cpp:47:38: warning: array subscript has type 'char' [-Wchar-subscripts]
+    s += Max(1, j - badChar[str[s + j]]);
+                                      ^
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o kmp.o main.o 
+Info: Nothing to build for CS1DAssn16
+04:39:15 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o kmp.o "..\\kmp.cpp" 
+..\kmp.cpp: In function 'std::vector<int> computeFailFunction(std::string)':
+..\kmp.cpp:64:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(i < key.size())
+                     ^
+..\kmp.cpp:83:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < F.size(); i++)
+                            ^
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o kmp.o main.o 
+Info: Nothing to build for CS1DAssn16
+04:40:01 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o kmp.o "..\\kmp.cpp" 
+..\kmp.cpp: In function 'std::vector<int> computeFailFunction(std::string)':
+..\kmp.cpp:64:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(i < key.size())
+                     ^
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o kmp.o main.o 
+04:40:51 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o kmp.o "..\\kmp.cpp" 
+..\kmp.cpp: In function 'std::vector<int> computeFailFunction(std::string)':
+..\kmp.cpp:64:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(i < key.size())
+                     ^
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o kmp.o main.o 
+04:41:08 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o kmp.o "..\\kmp.cpp" 
+..\kmp.cpp: In function 'std::vector<int> computeFailFunction(std::string)':
+..\kmp.cpp:64:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(i < key.size())
+                     ^
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o kmp.o main.o 
+04:41:49 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o kmp.o "..\\kmp.cpp" 
+..\kmp.cpp: In function 'std::vector<int> computeFailFunction(std::string)':
+..\kmp.cpp:64:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(i < key.size())
+                     ^
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o kmp.o main.o 
+04:42:19 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o kmp.o main.o 
+Info: Nothing to build for CS1DAssn16
+04:42:43 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o kmp.o "..\\kmp.cpp" 
+..\kmp.cpp: In function 'std::vector<int> computeFailFunction(std::string)':
+..\kmp.cpp:64:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(i < key.size())
+                     ^
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o kmp.o main.o 
+04:43:02 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o kmp.o "..\\kmp.cpp" 
+..\kmp.cpp: In function 'std::vector<int> computeFailFunction(std::string)':
+..\kmp.cpp:64:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(i < key.size())
+                     ^
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o kmp.o main.o 
+Info: Nothing to build for CS1DAssn16
+04:43:14 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o kmp.o "..\\kmp.cpp" 
+..\kmp.cpp: In function 'std::vector<int> computeFailFunction(std::string)':
+..\kmp.cpp:64:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(i < key.size())
+                     ^
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o kmp.o main.o 
+Info: Nothing to build for CS1DAssn16
+04:46:55 **** Incremental Build of configuration Debug for project CS1DAssn16 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o boyermoore.o "..\\boyermoore.cpp" 
+..\boyermoore.cpp: In function 'std::vector<int> SearchString(std::string, std::string)':
+..\boyermoore.cpp:50:45: warning: array subscript has type 'char' [-Wchar-subscripts]
+    s += (s + m < n) ? m - badChar[str[s + m]] : 1;
+                                             ^
+..\boyermoore.cpp:55:38: warning: array subscript has type 'char' [-Wchar-subscripts]
+    s += Max(1, j - badChar[str[s + j]]);
+                                      ^
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o bruteforce.o "..\\bruteforce.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o kmp.o "..\\kmp.cpp" 
+..\kmp.cpp: In function 'std::vector<int> computeFailFunction(std::string)':
+..\kmp.cpp:18:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(i < key.size())
+                     ^
+g++ -o CS1DAssn16.exe boyermoore.o bruteforce.o kmp.o main.o 
+Info: Nothing to build for CS1DAssn16
+22:03:02 **** Rebuild of configuration Debug for project Assn2CS1D ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Palindrome.o "..\\Palindrome.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o ClassHeader.o "..\\ClassHeader.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Assn2CS1D.exe ClassHeader.o Palindrome.o main.o 
+Info: Nothing to build for Assn2CS1D
+Info: Nothing to build for Assn2CS1D
+Info: Nothing to build for Assn2CS1D
+Info: Nothing to build for Assn2CS1D

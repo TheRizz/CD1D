@@ -1,0 +1,143 @@
+This program stores airport locations in to a directed graph and
+then navigates through the graph via a breadth first and a depth
+first search.
+
+Depth First Search:
+Dallas
+
+Houston
+
+Atlanta
+
+Miami
+
+New York
+
+Boston
+
+Chicago
+
+Kansas City
+
+Denver
+
+Los Angeles
+
+San Francisco
+
+Seattle
+
+This is the total trip distance: 7130
+
+The discovery edges are distances:
+239
+810
+661
+888
+214
+983
+533
+599
+1015
+381
+807
+
+The back edges are distances:
+1267
+1331
+2097
+1003
+1663
+496
+1435
+787
+1260
+864
+781
+1187
+Breadth First Search:
+
+Tier 0:
+Dallas
+
+Tier 1:
+Houston
+Kansas City
+Atlanta
+Los Angeles
+
+Tier 2:
+San Francisco
+Chicago
+Denver
+Miami
+New York
+
+Tier 3:
+Boston
+Seattle
+
+
+Total Distance: 7034
+
+The discovery edges are distances:
+239
+496
+781
+1435
+381
+533
+599
+661
+888
+214
+807
+
+
+The forward edges are distances:
+661
+888
+1015
+2097
+1331
+214
+
+
+The cross edges are distances:
+1435
+496
+781
+239
+239
+1187
+599
+533
+1260
+661
+888
+1015
+381
+807
+2097
+983
+1331
+214
+
+The back edges are distances:
+1267
+1015
+1331
+2097
+1003
+1663
+983
+787
+1260
+864
+810
+1187
+
+
+The graph is strongly connected because the DFS of the graph
+accesses every vertex on the graph both when the graph's edges
+are facing one way, and when they are inversed.

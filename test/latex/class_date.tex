@@ -1,0 +1,352 @@
+\hypertarget{class_date}{}\section{Date Class Reference}
+\label{class_date}\index{Date@{Date}}
+
+
+{\ttfamily \#include $<$Date.\+h$>$}
+
+Inheritance diagram for Date\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_date}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date} ()
+\begin{DoxyCompactList}\small\item\em This is the default date constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_date_afa65693475fb86a2de04c8578b232201}{Date} (const \hyperlink{class_date}{Date} \&)
+\begin{DoxyCompactList}\small\item\em This is a copy class date constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_date_a5874432b5f7339205866055201e885d7}{Date} (int year, int month, int day)
+\begin{DoxyCompactList}\small\item\em This is a non default date constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_date_ade4b469433b7966cc034cbcc6799233b}{$\sim$\+Date} ()
+\begin{DoxyCompactList}\small\item\em This is the default date deconstructor. \end{DoxyCompactList}\item 
+int \hyperlink{class_date_a3b9f9ebc5d79571606b30363b6121386}{Year} () const 
+\begin{DoxyCompactList}\small\item\em Year return. \end{DoxyCompactList}\item 
+int \hyperlink{class_date_a173d22f7c4671d3ad54b76994913967e}{Month} () const 
+\begin{DoxyCompactList}\small\item\em Month return. \end{DoxyCompactList}\item 
+int \hyperlink{class_date_a471379b5d940e5f8231d083e308110b9}{Day} () const 
+\begin{DoxyCompactList}\small\item\em Day return. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_date_a4ba2694d9bbd84819322e8ed2fb112a5}{To\+String} (Q\+String format) const 
+\begin{DoxyCompactList}\small\item\em Returns a qstring thats properly formatted from the individual int values. \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_ad54d8e4b8f2ad6df8eda3b8615c3c0b2}{operator==} (const \hyperlink{class_date}{Date} \&) const 
+\begin{DoxyCompactList}\small\item\em Overloaded operator ==. \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_adc801e7b23c84cd65dd70a9ac76344e3}{operator!=} (const \hyperlink{class_date}{Date} \&) const 
+\begin{DoxyCompactList}\small\item\em Overloaded operator !=. \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_a691bafd5bba9540f3c540f7327a758c2}{operator$<$} (const \hyperlink{class_date}{Date} \&) const 
+\begin{DoxyCompactList}\small\item\em Overloaded operator $<$. \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_a0bd06d545842c948cdca8ccc60d7d68d}{operator$>$} (const \hyperlink{class_date}{Date} \&) const 
+\begin{DoxyCompactList}\small\item\em Overloaded operator $>$ \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_a6632fd56fe1c549ef0a257c85fd8eb3e}{operator$<$=} (const \hyperlink{class_date}{Date} \&) const 
+\begin{DoxyCompactList}\small\item\em Overloaded operator $<$=. \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_ae4802fa52cf81f1a259b4a3b88bffc0d}{operator$>$=} (const \hyperlink{class_date}{Date} \&) const 
+\begin{DoxyCompactList}\small\item\em Overloaded operator $>$=. \end{DoxyCompactList}\item 
+\hyperlink{class_date}{Date} \& \hyperlink{class_date_a9dd48be596ece427170b034d940b3162}{operator+=} (const \hyperlink{class_date_offset}{Date\+Offset} \&)
+\begin{DoxyCompactList}\small\item\em Overloaded operator +=. \end{DoxyCompactList}\item 
+\hyperlink{class_date}{Date} \& \hyperlink{class_date_ad8e3dfec1fb54b232246b994ceeaf4de}{operator-\/=} (const \hyperlink{class_date_offset}{Date\+Offset} \&)
+\begin{DoxyCompactList}\small\item\em Overloaded operator -\/=. \end{DoxyCompactList}\item 
+const \hyperlink{class_date}{Date} \hyperlink{class_date_a76fb6c5f25f2edb5408966f769a378e1}{operator+} (const \hyperlink{class_date_offset}{Date\+Offset} \&) const 
+\begin{DoxyCompactList}\small\item\em Overloaded operator +. \end{DoxyCompactList}\item 
+const \hyperlink{class_date}{Date} \hyperlink{class_date_ac979d70d595be12cc3bde83149cbe33e}{operator-\/} (const \hyperlink{class_date_offset}{Date\+Offset} \&) const 
+\begin{DoxyCompactList}\small\item\em Overloaded operator -\/. \end{DoxyCompactList}\item 
+const \hyperlink{class_date_offset}{Date\+Offset} \hyperlink{class_date_a4030ca7cef26e292fc070817e9ee3392}{operator+} (const \hyperlink{class_date}{Date} \&) const 
+\begin{DoxyCompactList}\small\item\em Overloaded operator +. \end{DoxyCompactList}\item 
+const \hyperlink{class_date_offset}{Date\+Offset} \hyperlink{class_date_a94201a03d802b2f8bc8b45c8a38aac60}{operator-\/} (const \hyperlink{class_date}{Date} \&) const 
+\begin{DoxyCompactList}\small\item\em Overloaded operator -\/. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Q\+String \hyperlink{class_date_a4a576d12ee2c2bd0b875db256f4ab712}{Get\+Year\+String} (int year, int len)
+\begin{DoxyCompactList}\small\item\em Returning function that gets the year as a qstring. \end{DoxyCompactList}\item 
+static Q\+String \hyperlink{class_date_afb4c730486917f56dce2b9bdd08461cc}{Get\+Month\+Name} (int month)
+\begin{DoxyCompactList}\small\item\em Returning function that gets the month name as a qstring. \end{DoxyCompactList}\item 
+static Q\+String \hyperlink{class_date_ab6f4a84a651f2ac1f60faa6d3b4a43ad}{Get\+Month\+String} (int month, int len)
+\begin{DoxyCompactList}\small\item\em Returning function can get multiple different returns for the month. \end{DoxyCompactList}\item 
+static Q\+String \hyperlink{class_date_ad320136b5c8f79038d78022befd70f58}{Get\+Day\+String} (int day, int len)
+\begin{DoxyCompactList}\small\item\em Returning function that gets the day as a qstring. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\+L\+A\+SS\+: \hyperlink{class_date}{Date} 
+
+ The date class is used to keep track of dates in the program, it does this via a year, month, day format. This class is able to perform agregate functions on itself, as well as return any value the user could ask for. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\subsubsection[{\texorpdfstring{Date()}{Date()}}]{\setlength{\rightskip}{0pt plus 5cm}Date\+::\+Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{}\label{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}
+
+
+This is the default date constructor. 
+
+This default constructor will automactically initialize the year to 1970, the month to 1, and the day to 1 \index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\subsubsection[{\texorpdfstring{Date(const Date \&)}{Date(const Date &)}}]{\setlength{\rightskip}{0pt plus 5cm}Date\+::\+Date (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_date_afa65693475fb86a2de04c8578b232201}{}\label{class_date_afa65693475fb86a2de04c8578b232201}
+
+
+This is a copy class date constructor. 
+
+If a date object is already predefined then this copy constructor can make a duplicate object \index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\subsubsection[{\texorpdfstring{Date(int year, int month, int day)}{Date(int year, int month, int day)}}]{\setlength{\rightskip}{0pt plus 5cm}Date\+::\+Date (
+\begin{DoxyParamCaption}
+\item[{int}]{year, }
+\item[{int}]{month, }
+\item[{int}]{day}
+\end{DoxyParamCaption}
+)}\hypertarget{class_date_a5874432b5f7339205866055201e885d7}{}\label{class_date_a5874432b5f7339205866055201e885d7}
+
+
+This is a non default date constructor. 
+
+If the date is read in through a file and the individual variables are stored separately, then this constructor will store the integers in to the private values of the object \index{Date@{Date}!````~Date@{$\sim$\+Date}}
+\index{````~Date@{$\sim$\+Date}!Date@{Date}}
+\subsubsection[{\texorpdfstring{$\sim$\+Date()}{~Date()}}]{\setlength{\rightskip}{0pt plus 5cm}Date\+::$\sim$\+Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_date_ade4b469433b7966cc034cbcc6799233b}{}\label{class_date_ade4b469433b7966cc034cbcc6799233b}
+
+
+This is the default date deconstructor. 
+
+This deconstructor makes no changes to the object as the object doesn\textquotesingle{}t deal with any dynamic memory 
+
+\subsection{Member Function Documentation}
+\index{Date@{Date}!Day@{Day}}
+\index{Day@{Day}!Date@{Date}}
+\subsubsection[{\texorpdfstring{Day() const }{Day() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Date\+::\+Day (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_date_a471379b5d940e5f8231d083e308110b9}{}\label{class_date_a471379b5d940e5f8231d083e308110b9}
+
+
+Day return. 
+
+Returns the day \index{Date@{Date}!Get\+Day\+String@{Get\+Day\+String}}
+\index{Get\+Day\+String@{Get\+Day\+String}!Date@{Date}}
+\subsubsection[{\texorpdfstring{Get\+Day\+String(int day, int len)}{GetDayString(int day, int len)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Date\+::\+Get\+Day\+String (
+\begin{DoxyParamCaption}
+\item[{int}]{day, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_date_ad320136b5c8f79038d78022befd70f58}{}\label{class_date_ad320136b5c8f79038d78022befd70f58}
+
+
+Returning function that gets the day as a qstring. 
+
+This function returns the numeric day as a qstring \index{Date@{Date}!Get\+Month\+Name@{Get\+Month\+Name}}
+\index{Get\+Month\+Name@{Get\+Month\+Name}!Date@{Date}}
+\subsubsection[{\texorpdfstring{Get\+Month\+Name(int month)}{GetMonthName(int month)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Date\+::\+Get\+Month\+Name (
+\begin{DoxyParamCaption}
+\item[{int}]{month}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_date_afb4c730486917f56dce2b9bdd08461cc}{}\label{class_date_afb4c730486917f56dce2b9bdd08461cc}
+
+
+Returning function that gets the month name as a qstring. 
+
+This function uses the month integer and then will return the matching string for the name of the numeric month \index{Date@{Date}!Get\+Month\+String@{Get\+Month\+String}}
+\index{Get\+Month\+String@{Get\+Month\+String}!Date@{Date}}
+\subsubsection[{\texorpdfstring{Get\+Month\+String(int month, int len)}{GetMonthString(int month, int len)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Date\+::\+Get\+Month\+String (
+\begin{DoxyParamCaption}
+\item[{int}]{month, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_date_ab6f4a84a651f2ac1f60faa6d3b4a43ad}{}\label{class_date_ab6f4a84a651f2ac1f60faa6d3b4a43ad}
+
+
+Returning function can get multiple different returns for the month. 
+
+This function uses the month integer and then will enter a switch statement and either return a numeric value as a qstring or it will return the month name as a qstring \index{Date@{Date}!Get\+Year\+String@{Get\+Year\+String}}
+\index{Get\+Year\+String@{Get\+Year\+String}!Date@{Date}}
+\subsubsection[{\texorpdfstring{Get\+Year\+String(int year, int len)}{GetYearString(int year, int len)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Date\+::\+Get\+Year\+String (
+\begin{DoxyParamCaption}
+\item[{int}]{year, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_date_a4a576d12ee2c2bd0b875db256f4ab712}{}\label{class_date_a4a576d12ee2c2bd0b875db256f4ab712}
+
+
+Returning function that gets the year as a qstring. 
+
+This function returns the numeric year as a qstring \index{Date@{Date}!Month@{Month}}
+\index{Month@{Month}!Date@{Date}}
+\subsubsection[{\texorpdfstring{Month() const }{Month() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Date\+::\+Month (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_date_a173d22f7c4671d3ad54b76994913967e}{}\label{class_date_a173d22f7c4671d3ad54b76994913967e}
+
+
+Month return. 
+
+Returns the month \index{Date@{Date}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Date@{Date}}
+\subsubsection[{\texorpdfstring{operator"!=(const Date \&) const }{operator!=(const Date &) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Date\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{other}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_date_adc801e7b23c84cd65dd70a9ac76344e3}{}\label{class_date_adc801e7b23c84cd65dd70a9ac76344e3}
+
+
+Overloaded operator !=. 
+
+This allows the object to compare if not equal to another object \index{Date@{Date}!operator+@{operator+}}
+\index{operator+@{operator+}!Date@{Date}}
+\subsubsection[{\texorpdfstring{operator+(const Date\+Offset \&) const }{operator+(const DateOffset &) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Date} Date\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date\+Offset} \&}]{augend}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_date_a76fb6c5f25f2edb5408966f769a378e1}{}\label{class_date_a76fb6c5f25f2edb5408966f769a378e1}
+
+
+Overloaded operator +. 
+
+This allows the object to be added to another object \index{Date@{Date}!operator+@{operator+}}
+\index{operator+@{operator+}!Date@{Date}}
+\subsubsection[{\texorpdfstring{operator+(const Date \&) const }{operator+(const Date &) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Date\+Offset} Date\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{augend}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_date_a4030ca7cef26e292fc070817e9ee3392}{}\label{class_date_a4030ca7cef26e292fc070817e9ee3392}
+
+
+Overloaded operator +. 
+
+This allows the object to be added with a \hyperlink{class_date_offset}{Date\+Offset} object \index{Date@{Date}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Date@{Date}}
+\subsubsection[{\texorpdfstring{operator+=(const Date\+Offset \&)}{operator+=(const DateOffset &)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date} \& Date\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date\+Offset} \&}]{augend}
+\end{DoxyParamCaption}
+)}\hypertarget{class_date_a9dd48be596ece427170b034d940b3162}{}\label{class_date_a9dd48be596ece427170b034d940b3162}
+
+
+Overloaded operator +=. 
+
+This allows the object to be added and set equal to another object \index{Date@{Date}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Date@{Date}}
+\subsubsection[{\texorpdfstring{operator-\/(const Date\+Offset \&) const }{operator-(const DateOffset &) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Date} Date\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date\+Offset} \&}]{subtrahend}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_date_ac979d70d595be12cc3bde83149cbe33e}{}\label{class_date_ac979d70d595be12cc3bde83149cbe33e}
+
+
+Overloaded operator -\/. 
+
+This allows the object to be subtracted from another object \index{Date@{Date}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Date@{Date}}
+\subsubsection[{\texorpdfstring{operator-\/(const Date \&) const }{operator-(const Date &) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Date\+Offset} Date\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{subtrahend}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_date_a94201a03d802b2f8bc8b45c8a38aac60}{}\label{class_date_a94201a03d802b2f8bc8b45c8a38aac60}
+
+
+Overloaded operator -\/. 
+
+This allows the object to be subtracted from a \hyperlink{class_date_offset}{Date\+Offset} object \index{Date@{Date}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Date@{Date}}
+\subsubsection[{\texorpdfstring{operator-\/=(const Date\+Offset \&)}{operator-=(const DateOffset &)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date} \& Date\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date\+Offset} \&}]{subtrahend}
+\end{DoxyParamCaption}
+)}\hypertarget{class_date_ad8e3dfec1fb54b232246b994ceeaf4de}{}\label{class_date_ad8e3dfec1fb54b232246b994ceeaf4de}
+
+
+Overloaded operator -\/=. 
+
+This allows the object to be subtracted and set equal to another object \index{Date@{Date}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Date@{Date}}
+\subsubsection[{\texorpdfstring{operator$<$(const Date \&) const }{operator<(const Date &) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Date\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{other}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_date_a691bafd5bba9540f3c540f7327a758c2}{}\label{class_date_a691bafd5bba9540f3c540f7327a758c2}
+
+
+Overloaded operator $<$. 
+
+This allows the object to compare if less than another object \index{Date@{Date}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Date@{Date}}
+\subsubsection[{\texorpdfstring{operator$<$=(const Date \&) const }{operator<=(const Date &) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Date\+::operator$<$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{other}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_date_a6632fd56fe1c549ef0a257c85fd8eb3e}{}\label{class_date_a6632fd56fe1c549ef0a257c85fd8eb3e}
+
+
+Overloaded operator $<$=. 
+
+This allows the object to compare if less than or equal to another object \index{Date@{Date}!operator==@{operator==}}
+\index{operator==@{operator==}!Date@{Date}}
+\subsubsection[{\texorpdfstring{operator==(const Date \&) const }{operator==(const Date &) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Date\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{other}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_date_ad54d8e4b8f2ad6df8eda3b8615c3c0b2}{}\label{class_date_ad54d8e4b8f2ad6df8eda3b8615c3c0b2}
+
+
+Overloaded operator ==. 
+
+This allows the object to compare if equal to another object \index{Date@{Date}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Date@{Date}}
+\subsubsection[{\texorpdfstring{operator$>$(const Date \&) const }{operator>(const Date &) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Date\+::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{other}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_date_a0bd06d545842c948cdca8ccc60d7d68d}{}\label{class_date_a0bd06d545842c948cdca8ccc60d7d68d}
+
+
+Overloaded operator $>$ 
+
+This allows the object to compare if greater than another object \index{Date@{Date}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Date@{Date}}
+\subsubsection[{\texorpdfstring{operator$>$=(const Date \&) const }{operator>=(const Date &) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Date\+::operator$>$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{other}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_date_ae4802fa52cf81f1a259b4a3b88bffc0d}{}\label{class_date_ae4802fa52cf81f1a259b4a3b88bffc0d}
+
+
+Overloaded operator $>$=. 
+
+This allows the object to compare if greater than or equal to another object \index{Date@{Date}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Date@{Date}}
+\subsubsection[{\texorpdfstring{To\+String(\+Q\+String format) const }{ToString(QString format) const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Date\+::\+To\+String (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{format}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_date_a4ba2694d9bbd84819322e8ed2fb112a5}{}\label{class_date_a4ba2694d9bbd84819322e8ed2fb112a5}
+
+
+Returns a qstring thats properly formatted from the individual int values. 
+
+This function takes all of the values stored in the object and formats them to all be in one qstring that is returned by the function \index{Date@{Date}!Year@{Year}}
+\index{Year@{Year}!Date@{Date}}
+\subsubsection[{\texorpdfstring{Year() const }{Year() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Date\+::\+Year (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_date_a3b9f9ebc5d79571606b30363b6121386}{}\label{class_date_a3b9f9ebc5d79571606b30363b6121386}
+
+
+Year return. 
+
+Returns the year 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Date.\+h\item 
+Date.\+cpp\end{DoxyCompactItemize}

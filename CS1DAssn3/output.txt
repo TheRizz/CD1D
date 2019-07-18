@@ -1,0 +1,62 @@
+**************************************************
+*  PROGRAMMED BY : Ryan Martinez
+*  CLASS         : CS1D
+*  SECTION       : MW: 3:30 PM
+*  Assn #3       : Queue, Deque
+**************************************************
+
+**************************************************
+Part A of this program implements a queue interface
+with a wrapper of a doubly linked list class. With
+the wrapper, the code tests functions size, empty
+front, enqueue, and dequeue. Part B implements a
+vector ADT using a circularly extendible array. The
+goal of this is to create a vector class, instead of
+using the STL vector, and get the class to properly
+allocate memory when necessary.
+**************************************************
+
+Part 1:
+This is a test of the queue wrapper
+
+The queue contains 0 items
+The queue is empty
+A man, a plan, a canal, Panama has been added to the queue
+The queue contains 1 items
+The queue is not empty
+A man, a plan, a canal, Panama is at the front of the queue
+Was it a car or a cat I saw? has been added to the queue
+The queue contains 2 items
+Sit on a potato pan, Otis has been added to the queue
+No lemon, no melon has been added to the queue
+The queue contains 4 items
+A man, a plan, a canal, Panama has been removed from the queue
+Was it a car or a cat I saw? is at the front of the queue
+Was it a car or a cat I saw? has been removed from the queue
+Sit on a potato pan, Otis has been removed from the queue
+No lemon, no melon is at the front of the queue
+The queue contains 1 items
+No lemon, no melon has been removed from the queue
+The V contains 0 items
+The queue is empty
+
+Part 2:
+This is a test of a Vector ADT
+
+The Vector contains 0 items
+This Vector's capacity is 0
+The Vector is empty
+No lemon, no melon has been added to the Vector
+This Vector's capacity is 1
+A man, a plan, a canal, Panama has been added to the Vector
+Sit on a potato pan, Otis has been added to the Vector
+Was it a car or a cat I saw? has been added to the Vector
+This Vector's capacity is 4
+The Vector contains 4 items
+The Vector is not empty
+No lemon, no melon is at the front of the Vector
+A man, a plan, a canal, Panama is at the second item of the Vector
+A man, a plan, a canal, Panama has been removed from the queue
+The Vector contains 3 items
+The Vector holds Sit on a potato pan, Otis in the second item stored in the
+vector

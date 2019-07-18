@@ -1,0 +1,39 @@
+02:30:03 **** Incremental Build of configuration Debug for project CS1DAssn14 ****
+Info: Internal Builder is used for build
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++0x -o ClassHeader.o "..\\ClassHeader.c++" 
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++0x -o Quicksort.o "..\\Quicksort.c++" 
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++0x -o Radix.o "..\\Radix.c++" 
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++0x -o LetterToInt.o "..\\LetterToInt.c++" 
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++0x -o main.o "..\\main.c++" 
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++0x -o WordWrap.o "..\\WordWrap.c++" 
+..\WordWrap.c++: In function 'std::string WordWrap(std::string, int)':
+..\WordWrap.c++:60:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (line.length() + word.length() > lineLength)
+                                        ^
+..\WordWrap.c++:74:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (line.length() + word.length() > lineLength)
+                                      ^
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++0x -o OutputChartHeader.o "..\\OutputChartHeader.c++" 
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++0x -o OutputQuickSort.o "..\\OutputQuickSort.c++" 
+..\OutputQuickSort.c++: In function 'void OutputQuickSort(int, int, int*, PivotIndex)':
+..\OutputQuickSort.c++:42:2: error: 'timespec' was not declared in this scope
+  timespec  tS;             //OUT - Stores time elapsed.
+  ^
+..\OutputQuickSort.c++:42:12: error: expected ';' before 'tS'
+  timespec  tS;             //OUT - Stores time elapsed.
+            ^
+..\OutputQuickSort.c++:47:5: error: 'tS' was not declared in this scope
+     tS.tv_sec       = 0;
+     ^
+..\OutputQuickSort.c++:66:19: error: 'CLOCK_PROCESS_CPUTIME_ID' was not declared in this scope
+     clock_settime(CLOCK_PROCESS_CPUTIME_ID, &tS);
+                   ^
+..\OutputQuickSort.c++:66:48: error: 'clock_settime' was not declared in this scope
+     clock_settime(CLOCK_PROCESS_CPUTIME_ID, &tS);
+                                                ^
+..\OutputQuickSort.c++:70:48: error: 'clock_gettime' was not declared in this scope
+     clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &tS);
+                                                ^
+
+02:30:14 Build Finished (took 11s.512ms)
+

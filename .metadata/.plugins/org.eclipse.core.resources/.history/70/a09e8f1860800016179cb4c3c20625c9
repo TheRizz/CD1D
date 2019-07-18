@@ -1,0 +1,59 @@
+/*
+ * Queue.h
+ *
+ *  Created on: Sep 20, 2016
+ *      Author: rmartinez72
+ */
+
+#ifndef QUEUE_H_
+#define QUEUE_H_
+
+#include "header.h"
+#include "DLinkedList.h"
+
+template <typename Elem>
+class newQueue
+{
+public:
+	int size();
+	bool empty();
+	const Elem& front() const;
+	void enqueue(const Elem& e);
+	void dequeue();
+private:
+	DLinkedList<Elem> D;
+};
+
+template <typename Elem>
+int newQueue<Elem>::size()
+{
+	return D.size();
+}
+
+template <typename Elem>
+bool newQueue<Elem>::empty()
+{
+	return D.empty();
+}
+
+template <typename Elem>
+const Elem& newQueue<Elem>::front() const
+{
+	return D.front();
+}
+
+template <typename Elem>
+void newQueue<Elem>::enqueue(const Elem& e)
+{
+	D.addBack(e);
+}
+
+template <typename Elem>
+void newQueue<Elem>::dequeue()
+{
+	D.removeFront();
+}
+
+
+
+#endif /* QUEUE_H_ */

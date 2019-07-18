@@ -1,0 +1,25 @@
+The goal of this program is to test three different string
+searching algorithms. This progam tests: the brute force
+algorithm, the Boyer-Moore algorithm, and the Knuth-Morris-
+Pratt algorithm. All of these algorithms perform a certain
+number of comparisons to match the pattern to the text. This
+program outputs the number of comparisons required on all three.
+
+
+Brute force algorithm performed on the text :
+aaabcaadaabaaa
+With the key:
+aabaaa
+requires 23 comparisons
+
+Boyer-Moore algorithm performed on text:
+aaabcaadaabaaa
+With the key:
+aabaaa
+requires 9 comparisons
+
+Knuth-Morris-Pratt algorithm performed on text:
+aaabcaadaabaaa
+With the key:
+aabaaa
+requires 18 comparisons

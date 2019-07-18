@@ -1,0 +1,89 @@
+**************************************************
+*  PROGRAMMED BY : Ryan Martinez
+*  CLASS         : CS1D
+*  SECTION       : MW: 3:30 PM
+*  Assn #5       : Priority Queue
+**************************************************
+
+**************************************************
+This program implements a priority queue in both student
+developed and STL. The program reads in the patients and
+then removes them as their priority determines who goes
+first. The student implemented priority queue uses a
+SORTED LIST to help implement the priority queue.
+**************************************************
+
+Student implemented priority queue:
+
+Time : 1200
+Irene Ill is to be helped next
+
+Time : 1220
+Frank Feelingbad is to be helped next
+
+Time : 1240
+Alice Ailment is to be helped next
+
+Time : 1300
+Cathy Coughing is to be helped next
+
+Time : 1315
+Paula Pain is to be helped now
+
+Time : 1335
+Cathy Coughing is to be helped next
+
+Time : 1340
+Sid Sickly is to be helped next
+
+Time : 1400
+Sam sneezing is to be helped next
+
+Time : 1420
+Bob Bleeding is to be helped next
+
+Time : 1426
+Tom Temperature is to be helped now
+
+Time : 1446
+Bob Bleeding is to be helped next
+
+Time : 1500
+
+
+STL implemented priority queue:
+
+Time : 1200
+Irene Ill is to be helped next
+
+Time : 1220
+Frank Feelingbad is to be helped next
+
+Time : 1240
+Alice Ailment is to be helped next
+
+Time : 1300
+Cathy Coughing is to be helped next
+
+Time : 1315
+Paula Pain is to be helped now
+
+Time : 1335
+Cathy Coughing is to be helped next
+
+Time : 1340
+Sid Sickly is to be helped next
+
+Time : 1400
+Sam sneezing is to be helped next
+
+Time : 1420
+Bob Bleeding is to be helped next
+
+Time : 1426
+Tom Temperature is to be helped now
+
+Time : 1446
+Bob Bleeding is to be helped next
+
+Time : 1500

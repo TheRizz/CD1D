@@ -1,0 +1,45 @@
+**************************************************
+*  PROGRAMMED BY : Ryan Martinez
+*  CLASS         : CS1D
+*  SECTION       : MW: 3:30 PM
+*  Assn #7       : Double Hashing
+**************************************************
+
+**************************************************
+This program implements dictionary using an array
+to store values via double hashing. The hashing
+functions help the program determine where a
+specific key and value are to be placed in to the
+array.
+**************************************************
+
+The full hash list:
+Index:  0     (29,Dana Point)
+Index:  1     (88,El Segundo)
+Index:  2     (18,Del Mar)
+Index:  3     (32,San Diego)
+Index:  4     Available
+Index:  5     Available
+Index:  6     (35,Tustin)
+Index:  7     Available
+Index:  8     Available
+Index:  9     Available
+Index: 10     Available
+Index: 11     (11,La Jolla)
+Index: 12     (99,San Juan)
+Index: 13     (42,Vista)
+Index: 14     Available
+Index: 15     (49,San Diego)
+Index: 16     Available
+Index: 17     (22,Aliso Viejo)
+Index: 18     (18,Laguna Niguel)
+Index: 19     (77,Palms Springs)
+Index: 20     (49,Laguna Beach)
+Index: 21     Available
+Index: 22     (22,San Clemente)
+Index: 23     (52,Oceanside)
+Index: 24     Available
+Index: 25     Available
+Index: 26     Available
+Index: 27     Available
+Index: 28     Available

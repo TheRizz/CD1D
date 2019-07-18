@@ -1,0 +1,155 @@
+/*************************************************************************
+ * AUTHOR		: Ryan Martinez
+ * STUDENT ID	: 389657
+ * Assignment	: 3
+ * CLASS		: CS1D
+ * SECTION		: MW: 3:30 PM
+ * DUE DATE		: 9/21/2016
+ ************************************************************************/
+#include "header.h"
+#include "Queue.h"
+#include "CircularExtendableArray.h"
+#include "newVector.h"
+
+/*************************************************************************
+ * Test_One
+ * ________________________________________________________________________
+ * This function tests the newQueue variable to see if the methods for the
+ * wrapped class work. This tests functions including size, empty, front,
+ * enqueue, and dequeue.
+ *************************************************************************/
+void Test_One(newQueue<string> tester);
+
+
+/*************************************************************************
+ * Assignment 3
+ * _______________________________________________________________________
+ * Part A of this program implements a queue interface with a wrapper of a
+ * doubly linked list class. With the wrapper, the code tests functions
+ * size, empty, front, enqueue, and dequeue.
+ * _______________________________________________________________________
+ *
+ ************************************************************************/
+
+int main()
+{
+
+	//---------------------------------------------------------------------
+
+	newQueue <string> strQueue; //The newQueue variable
+	newVector<string> strVector(3); // The newVector variable
+
+	//---------------------------------------------------------------------
+
+	// This function will output the class header to the console
+	ClassHeader();
+
+	// This function tests the newQueue vairable to see if the methods work
+	//Test_One(strQueue);
+
+	strVector.addFront("three");
+	strVector.addFront("two");
+	strVector.addFront("one");
+	for(int i = 0; i < strVector.size(); i++)
+	{
+		cout << strVector[i] << endl;
+	}
+
+
+
+
+	return 0;
+}
+
+
+void Test_One(newQueue<string> tester)
+{
+	cout << "This is a test of the queue wrapper:\n";
+
+	// This will output if the queue is or isn't empty
+	cout << "The queue contains " << tester.size() << " items\n";
+	if(tester.empty())
+	{
+		cout << "The queue is empty\n";
+	}
+	else
+	{
+		cout << "The queue is not empty\n";
+	}
+
+	// This adds an item to the list and displays what has been added
+	tester.enqueue("A man, a plan, a canal, Panama");
+	cout << "A man, a plan, a canal, Panama" << " has been added to the queue\n";
+
+	// This outputs the size of the list
+	cout << "The queue contains " << tester.size() << " items\n";
+
+	// This will output if the queue is or isn't empty
+	if(tester.empty())
+	{
+		cout << "The queue is empty\n";
+	}
+	else
+	{
+		cout << "The queue is not empty\n";
+	}
+
+	// This will output the the item that is in the front of the queue
+	cout << tester.front() << " is at the front of the queue" << endl;
+
+	// This adds an item to the list and displays what has been added
+	cout << "Was it a car or a cat I saw?" << " has been added to the queue\n";
+	tester.enqueue("Was it a car or a cat I saw?");
+
+	// This outputs the size of the list
+	cout << "The queue contains " << tester.size() << " items\n";
+
+	// This adds an item to the list and displays what has been added
+	tester.enqueue("Sit on a potato pan, Otis");
+	cout << "Sit on a potato pan, Otis" << " has been added to the queue\n";
+
+	// This adds an item to the list and displays what has been added
+	tester.enqueue("No lemon, no melon");
+	cout << "No lemon, no melon" << " has been added to the queue\n";
+
+	// This outputs the size of the list
+	cout << "The queue contains " << tester.size() << " items\n";
+
+	// This will output the the item that is in the front of the queue
+	cout << tester.front() << " has been removed from the queue\n";
+	tester.dequeue();
+
+	// This will output the the item that is in the front of the queue
+	cout << tester.front() << " is at the front of the queue" << endl;
+
+	// This will output the the item that has been removed from the queue
+	cout << tester.front() << " has been removed from the queue\n";
+	tester.dequeue();
+
+	// This will output the the item that has been removed from the queue
+	cout << tester.front() << " has been removed from the queue\n";
+	tester.dequeue();
+
+	// This will output the the item that is in the front of the queue
+	cout << tester.front() << " is at the front of the queue\n";
+
+	// This outputs the size of the list
+	cout << "The queue contains " << tester.size() << " items\n";
+
+	// This will output the the item that has been removed from the queue
+	cout << tester.front() << " has been removed from the queue\n";
+	tester.dequeue();
+
+	// This will output if the queue is or isn't empty
+	cout << "The queue contains " << tester.size() << " items\n";
+	if(tester.empty())
+	{
+		cout << "The queue is empty\n";
+	}
+	else
+	{
+		cout << "The queue is not empty\n";
+	}
+}
+
+

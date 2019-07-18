@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CS1DAssn6/heap.h&apos; to &apos;HeapItem.h&apos;" description="Rename resource &apos;heap.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="heap.h" name="HeapItem.h" stamp="1476075765090" updateReferences="true"/>
+</session>

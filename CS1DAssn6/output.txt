@@ -1,0 +1,121 @@
+**************************************************
+*  PROGRAMMED BY : Ryan Martinez
+*  CLASS         : CS1D
+*  SECTION       : MW: 3:30 PM
+*  Assn #6       : Heap Sort
+**************************************************
+
+**************************************************
+This program implements a heap by using a dynamic array of
+items. The program stores the minimum value at the root of
+the heap, and dequeues the minimum value first. The heap
+stores heap item objects that contain a key value so that
+they can be accurately input in to the list, as well as a
+templated data item.
+**************************************************
+
+Heap ADT:
+Heap element 0. key=12  data=Lions
+Heap element 1. key=13  data=Bears
+Heap element 2. key=22  data=Vikings
+Heap element 3. key=24  data=Broncos
+Heap element 4. key=42  data=Chargers
+Heap element 5. key=44  data=Bengals
+Heap element 6. key=69  data=Packers
+Heap element 7. key=44  data=Dolphins
+Heap element 8. key=33  data=Rams
+Heap element 9. key=123  data=Patriots
+There are 10 elements in the heap
+
+Dequeueing 12
+There are 9 elements in the heap
+
+Elements in the heap:
+Heap element 0. key=13  data=Bears
+Heap element 1. key=24  data=Broncos
+Heap element 2. key=22  data=Vikings
+Heap element 3. key=33  data=Rams
+Heap element 4. key=42  data=Chargers
+Heap element 5. key=44  data=Bengals
+Heap element 6. key=69  data=Packers
+Heap element 7. key=44  data=Dolphins
+Heap element 8. key=123  data=Patriots
+
+Dequeueing 13
+There are 8 elements in the heap
+
+Elements in the heap:
+Heap element 0. key=22  data=Vikings
+Heap element 1. key=24  data=Broncos
+Heap element 2. key=44  data=Bengals
+Heap element 3. key=33  data=Rams
+Heap element 4. key=42  data=Chargers
+Heap element 5. key=123  data=Patriots
+Heap element 6. key=69  data=Packers
+Heap element 7. key=44  data=Dolphins
+
+Dequeueing 22
+There are 7 elements in the heap
+
+Elements in the heap:
+Heap element 0. key=24  data=Broncos
+Heap element 1. key=33  data=Rams
+Heap element 2. key=44  data=Bengals
+Heap element 3. key=44  data=Dolphins
+Heap element 4. key=42  data=Chargers
+Heap element 5. key=123  data=Patriots
+Heap element 6. key=69  data=Packers
+
+Dequeueing 24
+There are 6 elements in the heap
+
+Elements in the heap:
+Heap element 0. key=33  data=Rams
+Heap element 1. key=42  data=Chargers
+Heap element 2. key=44  data=Bengals
+Heap element 3. key=44  data=Dolphins
+Heap element 4. key=69  data=Packers
+Heap element 5. key=123  data=Patriots
+
+Dequeueing 33
+There are 5 elements in the heap
+
+Elements in the heap:
+Heap element 0. key=42  data=Chargers
+Heap element 1. key=44  data=Dolphins
+Heap element 2. key=44  data=Bengals
+Heap element 3. key=123  data=Patriots
+Heap element 4. key=69  data=Packers
+
+Dequeueing 42
+There are 4 elements in the heap
+
+Elements in the heap:
+Heap element 0. key=44  data=Bengals
+Heap element 1. key=44  data=Dolphins
+Heap element 2. key=69  data=Packers
+Heap element 3. key=123  data=Patriots
+
+Dequeueing 44
+There are 3 elements in the heap
+
+Elements in the heap:
+Heap element 0. key=44  data=Dolphins
+Heap element 1. key=123  data=Patriots
+Heap element 2. key=69  data=Packers
+
+Dequeueing 44
+There are 2 elements in the heap
+
+Elements in the heap:
+Heap element 0. key=69  data=Packers
+Heap element 1. key=123  data=Patriots
+
+Dequeueing 69
+There are 1 elements in the heap
+
+Elements in the heap:
+Heap element 0. key=123  data=Patriots
+
+Dequeueing 123
+There are 0 elements in the heap

@@ -1,0 +1,106 @@
+Assignment 12 Dijkstra and MST
+
+***************************************************************
+This program stores information in to a graph and then performs
+a Dijkstra's traversal through the graph, outputting the
+verticies on the shortest route as well as the total distance
+at the end of the route. In addition to this, the program also
+outputs the minimum spanning tree using Prim's algorithm to find
+the mos efficient route. This outputs all of the edges in order
+as well as the total mileage in the end.
+***************************************************************
+Dijkstra's Algorithm:
+
+Denver
+Los Angeles
+
+Distance: 1015
+
+Denver
+San Francisco
+
+Distance: 1267
+
+Denver
+Seattle
+
+Distance: 1331
+
+Denver
+Denver
+Distance: 0
+
+Denver
+Kansas City
+Dallas
+Houston
+
+Distance: 1334
+
+Denver
+Kansas City
+Dallas
+
+Distance: 1095
+
+Denver
+Kansas City
+
+Distance: 599
+
+Denver
+Chicago
+
+Distance: 1003
+
+Denver
+Kansas City
+Atlanta
+Miami
+
+Distance: 2124
+
+Denver
+Kansas City
+Atlanta
+
+Distance: 1463
+
+Denver
+Chicago
+New York
+
+Distance: 1790
+
+Denver
+Chicago
+Boston
+
+Distance: 1986
+
+
+Minimum Spanning Tree:
+
+Los Angeles to San Francisco is 381
+
+San Francisco to Seattle is 807
+
+Los Angeles to Denver is 1015
+
+Dallas to Houston is 239
+
+Kansas City to Dallas is 496
+
+Denver to Kansas City is 599
+
+Kansas City to Chicago is 533
+
+Atlanta to Miami is 661
+
+Dallas to Atlanta is 781
+
+Chicago to New York is 787
+
+New York to Boston is 214
+
+Total Distance: 6513

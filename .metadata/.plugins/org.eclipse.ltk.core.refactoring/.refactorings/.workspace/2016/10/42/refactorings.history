@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;CS1DAssn6/binaryTree.h&apos;" deleteContents="false" description="Delete resource &apos;CS1DAssn6/binaryTree.h&apos;" element1="/CS1DAssn6/binaryTree.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1476129138797"/>&#x0A;<refactoring comment="Delete resource &apos;CS1DAssn6/binarySearchTree.h&apos;" deleteContents="false" description="Delete resource &apos;CS1DAssn6/binarySearchTree.h&apos;" element1="/CS1DAssn6/binarySearchTree.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1476129142490"/>
+</session>
